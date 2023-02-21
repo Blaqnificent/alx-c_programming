@@ -12,7 +12,7 @@ void times_table(void)
 
 	for (row = 0; row <= 9; row++)
 	{
-		_putchar(48)
+		_putchar(48);
 		for (column = 1; column <= 9; column++)
 		{
 			product = (row * column);
