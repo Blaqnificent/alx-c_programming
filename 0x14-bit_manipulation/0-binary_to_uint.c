@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _strlen - returns the length of a string
@@ -41,7 +40,7 @@ unsigned int binary_to_uint(const char *c)
 
 	int length = _strlen(c);
 
-	if (c == NULL)
+	if (!c)
 		return (0);
 	--length;
 	power = 1;
