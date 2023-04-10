@@ -38,19 +38,19 @@ unsigned int binary_to_uint(const char *c)
 {
 	unsigned int decimal, power, result = 0;
 
-	int length = _strlen(b);
+	int length = _strlen(c);
 
-	if (b == NULL)
+	if (c == NULL)
 		return (0);
 	--length;
 	power = 1;
 	while (length >= 0)
 	{
-		if (b[length] != '0' && b[length] != '1')
+		if (c[length] != '0' && c[length] != '1')
 		{
 			return (0);
 		}
-		decimal = to_decimal(b[length]);
+		decimal = to_decimal(c[length]);
 		result += decimal * power;
 		power *= 2;
 		length--;
